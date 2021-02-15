@@ -1,0 +1,23 @@
+<table style="border-radius: 20px ;">
+  <thead>
+      <div style="text-align: center; vertical-align: middle;">
+  <tr>
+      <td style="width: 100vw">Name</td>
+      <td style="width: 100vw">Description</td>
+      <td style="width: 100vw">Number of employees</td>
+      <td style="width: 100vw">Timestamp</td>
+  </tr>
+</div>
+</thead>
+<thead>
+  <div style="text-align: center; vertical-align: middle;">
+  <tr *ngFor="let dep of departments">
+      <td style="width: 100vw">{{ dep.name }}</td>
+      <td style="width: 100vw">{{ dep.description }}</td>
+      <td style="width: 100vw">{{ dep.numberofemp }}</td>
+      <td style="width: 100vw">{{ dep.timestamp }}</td>
+      <a value="Consultar todo" class="fas fa-edit"></a>
+  </tr>
+</div>
+</thead>
+</table>

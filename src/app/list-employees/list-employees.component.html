@@ -1,0 +1,25 @@
+<table style="border-radius: 20px ;">
+  <thead>
+      <div style="text-align: center; vertical-align: middle;">
+  <tr>
+      <td style="width: 100vw">Name</td>
+      <td style="width: 100vw">Gender</td>
+      <td style="width: 100vw">Salary</td>
+      <td style="width: 100vw">Position</td>
+      <td style="width: 100vw">Timestamp</td>
+  </tr>
+</div>
+</thead>
+<thead>
+  <div style="text-align: center; vertical-align: middle;">
+  <tr *ngFor="let emp of employees">
+      <td style="width: 100vw">{{ emp.name }}</td>
+      <td style="width: 100vw">{{ emp.gender }}</td>
+      <td style="width: 100vw">{{ emp.salary }}</td>
+      <td style="width: 100vw">{{ emp.position }}</td>
+      <td style="width: 100vw">{{ emp.timestamp }}</td>
+      <a value="Consultar todo" class="fas fa-edit"></a>
+  </tr>
+</div>
+</thead>
+</table>

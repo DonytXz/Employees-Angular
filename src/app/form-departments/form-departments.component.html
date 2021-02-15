@@ -1,0 +1,28 @@
+<div class="container">
+  <!-- <form id="contact"  method="post"> -->
+  <div id="contact">
+    <h3>Departments form</h3>
+    <h4>Fill in all the required fields below</h4>
+
+    <fieldset>
+      <input [(ngModel)]="department.name" placeholder="Name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+
+    <fieldset>
+      <textarea [(ngModel)]="department.description" placeholder="Description" type="text" tabindex="2" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <input [(ngModel)]="department.numberofemp" placeholder="Number of employees" type="number" tabindex="3" required autofocus>
+    </fieldset>
+
+    <fieldset>
+      <button name="submit" (click)="saveDep()" type="submit" id="contact-submit"
+        data-submit="...Sending">Submit</button>
+    </fieldset>
+
+    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+  </div>
+
+  <!-- </form> -->
+</div>

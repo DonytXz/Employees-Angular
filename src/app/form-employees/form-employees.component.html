@@ -1,0 +1,34 @@
+<div class="container">
+  <!-- <form id="contact" method="post"> -->
+  <div id="contact">
+    <h3>Employees form</h3>
+    <h4>Fill in all the required fields below</h4>
+
+    <fieldset>
+      <input [(ngModel)]="employee.name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input [(ngModel)]="employee.gender" placeholder="Your gender" type="text" tabindex="2" required>
+    </fieldset>
+
+    <!-- <fieldset>
+        <input placeholder="Fecha de nacimiento" type="date" tabindex="3" required>
+      </fieldset> -->
+
+    <fieldset>
+      <input [(ngModel)]="employee.salary" placeholder="Salary by hour(in US)" type="number" tabindex="4" required>
+    </fieldset>
+
+    <fieldset>
+      <input [(ngModel)]="employee.position" placeholder="Position role" type="text" tabindex="5" required>
+    </fieldset>
+
+    <fieldset>
+      <button name="submit" (click)="saveEmp()" type="submit" id="contact-submit"
+        data-submit="...Sending">Submit</button>
+    </fieldset>
+
+    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+  </div>
+  <!-- </form> -->
+</div>
